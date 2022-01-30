@@ -15,8 +15,8 @@ year = date.split("-")[0]
 for song in song_titles:
     songs.append(song.getText())
 print(songs[0])
-Client_ID = "707e54160c2647cf99ae0e4347dac568"
-Client_Secret = "5e8f49249462428bb8d9b469ec2c5e7d"
+Client_ID = "Client-id"
+Client_Secret = "client_secret"
 
 sp = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=f"{Client_ID}",
                                                scope="playlist-modify-private",
